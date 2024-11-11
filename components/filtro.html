@@ -1,0 +1,70 @@
+<head>
+    <style>
+        .filter-container {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            align-items: center;
+        }
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+        select {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: white;
+            cursor: pointer;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        select:hover, select:focus {
+            border-color: #007bff;
+        }
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<div class="filter-container">
+    <div class="filter-group">
+        <label for="animal-type">Tipo de animal:</label>
+        <select id="animal-type" aria-label="Tipo de animal">
+            <option value="" disabled selected>Selecione</option>
+            <option value="todos">Todos</option>
+            <option value="cachorro">Cachorro</option>
+            <option value="gato">Gato</option>
+        </select>
+    </div>
+
+    <div class="filter-group">
+        <label for="animal-sex">Sexo:</label>
+        <select id="animal-sex" aria-label="Sexo">
+            <option value="" disabled selected>Selecione</option>
+            <option value="todos">Todos</option>
+            <option value="femea">Fêmea</option>
+            <option value="macho">Macho</option>
+        </select>
+    </div>
+
+    <div class="filter-group">
+        <label for="animal-size">Porte:</label>
+        <select id="animal-size" aria-label="Porte">
+            <option value="" disabled selected>Selecione</option>
+            <option value="todos">Todos</option>
+            <option value="pequeno">Pequeno</option>
+            <option value="medio">Médio</option>
+            <option value="grande">Grande</option>
+        </select>
+    </div>
+</div>
